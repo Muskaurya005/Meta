@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z-index properties in CSS</title>
+    <style>
+        .box{
+            width: 230px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        #red{
+            position: relative;
+            background-color: red;
+            /*Z-index used to overlap the other element */
+            z-index:100;
+        }
+        #green{
+            position: relative;
+            background: green;
+            top:-45px;
+            left: 40px;
+            /*If you want this box to vanish and want some blank white space which suggest that there was a box*/
+            /*display: visibility;*/
+
+            /*If you want this box to vanish and you do not want some blank white space which suggest that there was a box*/
+            /*display: none;*/
+        }
+        #blue{
+            position: relative;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="red"></div>
+    <div class="box" id="green"></div>
+    <div class="box" id="blue"></div>
+</body>
+</html>

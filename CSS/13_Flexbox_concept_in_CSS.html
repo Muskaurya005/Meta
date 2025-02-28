@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox concept in CSS</title>
+    <style>
+        .container{
+            height: 110vh;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            /*flex-direction: column-reverse;*//*reverse the element in column(4,3,2,1)*/
+            /*flex-direction: row-reverse;*//*reverse the element in column(4,3,2,1)*/
+            /*flex-direction: column;*//*shows element in column(1,2,3,4)*/
+            /*justify-content: center;/*used to align element in X-axis*/
+            /*align-items:center;*/
+            flex-wrap: wrap; /*makes element responsive*/
+
+        }
+        .item{
+            background-color: blueviolet;
+            font-size: 30px;
+            width: 160px;
+            height: 160px;
+            border: 2px solid black;
+            margin: 5px; 
+        }
+        #Box-1{
+            /*order: 4;/*shift element accodinglly*/
+            /*flex-grow: 4;*/
+           /* flex-shrink: 3;*/
+            align-self: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="Box-1">Box-1</div>
+        <div class="item" id="Box-2">Box-2</div>
+        <div class="item" id="Box-3">Box-3</div>
+        <div class="item" id="Box-4">Box-4</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom_Properties_&_Variable_in_CSS</title>
+    <style>
+        :root{
+            --different-color: rgb(15, 92, 15) ;
+        }
+        .container{
+            background-color: var(--different-color);
+        }
+        span{
+            color: var(--different-color);   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Full stack Web Development course</h1>
+    </div>
+    <div class="container">
+        <h1>C++ course</h1>
+    </div>
+    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, asperiores.</span>
+    
+</body>
+</html>

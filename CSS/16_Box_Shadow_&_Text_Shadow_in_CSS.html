@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box_Shadow_&_Text_Shadow_in_CSS</title>
+    <style>
+        .container{
+            display: flex row;
+            justify-content: center;
+        }
+        .box{
+            background-color: yellowgreen;
+            margin: 20px 10px;
+            padding: 20px 10px;
+        }
+        #box-1{
+            /* offset-x offset-y blur-radius spread-radius color*/
+            box-shadow: 10px 15px 10px  rgb(110, 158, 14);
+        }
+        #box-2{
+            text-shadow: 2px -1px rgb(193, 209, 160);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h1>Wab development </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rem velit ab dolorem, quo aliquid autem tempora aspernatur optio amet.
+            </p>
+        </div>
+        <div class="container">
+            <div class="box" id="box-2">
+                <h1>C++</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rem velit ab dolorem, quo aliquid autem tempora aspernatur optio amet.
+                </p>
+            </div>
+            <div class="container">
+                <div class="box" id="box-3">
+                    <h1>JAVA</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rem velit ab dolorem, quo aliquid autem tempora aspernatur optio amet.
+                    </p>
+                </div>
+
+    </div>
+</body>
+</html>
