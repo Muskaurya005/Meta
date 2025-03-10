@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design with Tailwind CSS</title>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Mobile-first design -->
+  <div class="bg-red-500 p-4 text-center md:bg-blue-500 lg:p-8 xl:p-12">
+    This is a responsive container that changes background color and padding on different screen sizes.
+  </div>
+
+  <!-- Responsive grid -->
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div class="bg-blue-500 p-4 text-center">Grid item 1</div>
+    <div class="bg-blue-500 p-4 text-center">Grid item 2</div>
+    <div class="bg-blue-500 p-4 text-center">Grid item 3</div>
+    <div class="bg-blue-500 p-4 text-center">Grid item 4</div>
+  </div>
+
+  <!-- Responsive spacing -->
+  <div class="p-4 md:p-8 lg:p-12 xl:p-16">
+    This is a responsive container that changes padding on different screen sizes.
+  </div>
+
+  <!-- Responsive sizing -->
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+    This is a responsive container that changes width on different screen sizes.
+  </div>
+
+  <!-- Responsive typography -->
+  <p class="text-sm md:text-base lg:text-lg xl:text-xl">
+    This is a responsive paragraph that changes font size on different screen sizes.
+  </p>
+
+</body>
+</html>
+

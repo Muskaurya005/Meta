@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover, Active, Focus States with Tailwind CSS</title>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hover State -->
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Hover Me
+  </button>
+
+  <!-- Active State -->
+  <button class="bg-blue-500 active:bg-blue-800 text-white font-bold py-2 px-4 rounded">
+    Click Me
+  </button>
+
+  <!-- Focus State -->
+  <input type="text" class="bg-gray-200 focus:bg-white focus:border-blue-500 text-gray-700 font-bold py-2 px-4 rounded" placeholder="Focus Me">
+
+  <!-- Combining States -->
+  <button class="bg-blue-500 hover:bg-blue-700 focus:bg-blue-800 active:bg-blue-900 text-white font-bold py-2 px-4 rounded">
+    Combine States
+  </button>
+
+  <!-- Customizing States -->
+  <button class="bg-blue-500 hover:bg-orange-500 focus:bg-purple-500 active:bg-pink-500 text-white font-bold py-2 px-4 rounded">
+    Customize States
+  </button>
+
+</body>
+</html>
+
